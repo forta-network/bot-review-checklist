@@ -1,6 +1,6 @@
-# Forta Agent Review Checklist
+# Forta Bot Review Checklist
 
-This document is intended to serve as a checklist for agent developers to ensure they are producing high quality agents. As a living, breathing document, if you feel there is something missing you are encouraged to create a PR 🙂
+This document is intended to serve as a checklist for detection bot developers to ensure they are producing high quality bots. As a living, breathing document, if you feel there is something missing you are encouraged to create a PR 🙂
 
 ## Installation
 
@@ -12,7 +12,7 @@ This document is intended to serve as a checklist for agent developers to ensure
 ## Documentation
 
 - [ ] Is there a README.md?
-- [ ] Does the README sufficiently describe what the agent does?
+- [ ] Does the README sufficiently describe what the bot does?
 - [ ] Are alert descriptions provided for each type of alert?
 - [ ] Are there any example transactions/blocks provided? If so, do they generate findings as expected?
 - [ ] Does the code contain inline comments and is easy to follow?
@@ -28,7 +28,7 @@ This document is intended to serve as a checklist for agent developers to ensure
 ## Running
 
 - [ ] Run `npm start`
-- [ ] Does the agent actually run?
+- [ ] Does the bot actually run?
 - [ ] Are there any errors thrown?
 - [ ] Are there too many alerts being generated? i.e. every block or every other transaction
 
@@ -41,5 +41,5 @@ This document is intended to serve as a checklist for agent developers to ensure
 - [ ] Are the findings fields filled out correctly? Is there something missing that could be added? Is there too much information?
 - [ ] Are the SDK methods being used appropriately? e.g. `filterLog`, `filterFunction`, `getEthersProvider`
 - [ ] When reading event `args` from `filterLog`, does the argument actually exist in the event declaration?
-- [ ] Does the agent follow [best practices](https://docs.forta.network/en/latest/best-practices/)?
-- [ ] Does the agent handle failed network calls? Can it recover from these errors?
+- [ ] Does the bot follow [best practices](https://docs.forta.network/en/latest/best-practices/)?
+- [ ] Does the bot handle failed network calls? Can it recover from these errors?
